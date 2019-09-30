@@ -2,7 +2,7 @@
 
 Question 6:																				
 
-(BINARYTREE): Given a binary tree, print out all its root –to –leaf paths.
+(BINARYTREE): Given a binary tree, print out all its root â€“to â€“leaf paths.
 
 */
 #include<iostream>
@@ -51,7 +51,7 @@ void all_paths(struct node *root,queue<int> q,queue<int> q_temp)
 	else
 	{
 		/* if the node has both the left and right node then the root is pushed into the queue and 
-		   then the function is recalled with the subnodes as the root nodes */
+		   then the function is recalled with the subnodes as the root nodes      */
 		if(root->left!=NULL&&root->right!=NULL)
 		{
 			q.push(root->data);
@@ -94,7 +94,7 @@ struct node* newnode(int data)
 
 int main()
 /*   			
-	objective: to print out all its root –to –leaf paths of given binary tree
+	objective: to print out all its root â€“to â€“leaf paths of given binary tree
 	input parameters: none	
 	output value: none	
 	approach: a recursive function is called 
